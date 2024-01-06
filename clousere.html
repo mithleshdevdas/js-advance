@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clousere project</title>
+</head>
+<body>
+ <button id="orange">orange</button>   
+ <button id="green">green  </button>   
+</body>
+<script>
+    function handleclick(color){
+        return function(){
+         document.body.style.background =`${color}`   
+        }
+        
+    }
+    document.getElementById('orange').onclick = handleclick('orange')
+    document.getElementById('green').onclick = handleclick('green')
+</script>
+</html>
